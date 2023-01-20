@@ -1,0 +1,153 @@
+html, body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    overflow: auto;
+}
+
+h1 {
+    font-family: 'Fraunces';
+    font-size: 2.5rem;
+    color: hsl(212, 21%, 14%);
+}
+
+p {
+    color:  hsl(228, 12%, 48%);
+    line-height: 1.6;
+}
+
+p.pre-title {
+    letter-spacing: 8px;
+    margin: 0px;
+}
+
+p.item-description {
+    margin: 0px;
+}
+
+p.price {
+    color: #3d8168;
+    font-size: 3rem;
+    font-family: 'Fraunces';
+    margin: 30px 0px 35px 0px;
+}
+
+a.price {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    color:  hsl(228, 12%, 48%);
+    font-family: 'Montserrat';
+    pointer-events: none;
+}
+
+.main {
+    background: white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    max-width: 840px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+section.img {
+    width: 100%;
+    background-image: url("/images/image-product-desktop.jpg");
+    height: 600px; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 0px 25px
+}
+
+.text {
+    width: 100%;
+    padding: 0px 25px;
+}
+
+button {
+        border-radius: 10px;
+        background: #3d8168;
+        border: 0px;
+        font-size: 1.2rem;
+        color: white;
+        padding: 15px 50px;
+        width: 100%;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        cursor: pointer;
+}
+
+i.fa-solid.fa-basket-shopping {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .main {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: inherit;
+        width: 100%;
+    }
+
+    section.img {
+        padding: 0px;
+        border-radius: 20px;
+        height: 350px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .text {
+        padding: 30px 0 35px 0px;
+    }
+
+    .text > * {
+       padding: 0px 25px;
+    }
+
+    button {
+        border-radius: 10px;
+        background: #3d8168;
+        border: 0px;
+        font-size: 1.2rem;
+        color: white;
+        padding: 15px 50px !important;
+        width: 90%;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        cursor: pointer;
+        margin: 0 auto;
+        display: block;
+    }
+
+    h1 {
+        margin: 10px 0px 15px 0px;
+        font-size: 2rem;
+    }
+
+    p.price {
+        margin: 10px 0px 20px 0px;
+        font-size: 2rem;
+    }
+
+    a.price {
+        font-size: 1rem;
+        text-decoration: line-through;
+        color:  hsl(228, 12%, 48%);
+        font-family: 'Montserrat';
+    }
+
+  }
