@@ -57,7 +57,7 @@ a.price {
 
 section.img {
     width: 100%;
-    background-image: url("/images/image-product-desktop.jpg");
+    background-image: url("https://raw.githubusercontent.com/lunastorta/basic-product-card/main/images/image-product-desktop.jpg");
     height: 600px; 
     background-position: center;
     background-repeat: no-repeat; 
@@ -102,6 +102,7 @@ i.fa-solid.fa-basket-shopping {
     }
 
     section.img {
+        background-image: url("https://raw.githubusercontent.com/lunastorta/basic-product-card/main/images/image-product-mobile.jpg");
         padding: 0px;
         border-radius: 20px;
         height: 350px;
